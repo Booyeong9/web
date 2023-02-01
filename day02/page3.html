@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src $=jpg] {
+            border: 30px solid red;
+
+        }
+        img[src $=png] {
+            border: 30px dotted blue;
+
+        }
+        #d1 > p {
+            width: 200px; height: 100px;
+            background: gold;
+
+        }
+        #d2 p {
+            width: 200px; height: 100px;
+            background: silver;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="1.jpg" alt="햄버거">
+    <br>
+    <img src="12.png" alt="계단">
+    <br>
+    <hr>
+    <!-- div태그 화면 나눌 때 사용 -->
+    <div id="d1">
+        <!-- p태그는 문단 -->
+        <p>내가 좋아하는 음식</p>
+        <div id="d11">
+            <!-- 하위 -->
+        <p>나는 한식을 좋아해요</p>
+        <p>나는 중식을 좋아해요</p>
+         </div>
+    </div>
+
+    <div id="d2">
+        <!-- p태그는 문단 -->
+        <p>내가 싫어하는 음식</p>
+        <div id="d12">
+            <!-- 하위 -->
+        <p>나는 민초를 싫어해요</p>
+        <p>나는 매운걸 싫어해요</p>
+        </div>
+    </div>
+</body>
+</html>

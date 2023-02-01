@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    //    가로 = 22.1
+    //    세로 = 33.1
+    //    면적 = 가로 * 세로
+    //    alert (면적)
+    // 저장공간 하나당 하나씩 출력
+
+        가로 = prompt ('길이입력')
+       세로 = prompt ('길이입력')
+       면적 = parseInt(가로) * parseInt(세로)
+    //    toFixed -> 소숫점 자르기
+       alert ('사각형의 면적은 ' + 면적.toFixed(1) )
+
+       price= prompt ('커피가격')
+       amount = prompt ('구매갯수')
+       total = parseInt(price) * parseInt(amount)
+       alert ('커피의 금액은 ' + total)
+
+
+       // const 대문자 상수 - > 값이 변하지 않을 때 
+        const PRICE2 = 2000
+        const PRICE3 = 3000
+        apple = 3
+        pear =  2
+        total2 = PRICE2*apple + PRICE3*pear
+        alert ('과일의 총 금액은 ' + total)
+
+       
+        yes_temp = 25
+        today_temp = 10
+        average = (yes_temp+today_temp) / 2
+        alert ('온도의 평균은 ' + average)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+
+
+</html>

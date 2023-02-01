@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li {
+            /* 글자에 스타일 지정 none하면 붙어있는거 사라짐 */
+            list-style: none;
+            /* 왼쪽으로 정렬 */
+            float: left;
+            /* padding - 띄우기 */
+            padding: 15;
+            /* width, height 글자 크기 */
+            width: 80px;
+            height: 20px;
+            /* border-radius: 50px; */
+            text-align: center;
+
+        }
+
+        li:first-child{
+            border-radius: 50px 0 0 50px;
+
+        }
+
+        /* linth-child 짝수번째만 선택 */
+        li:nth-child(2n) {
+
+            background: orange;
+        }
+
+        /* 2n+1은 홀수 */
+        li:nth-child(2n+1) {
+
+        background: green;
+        }
+
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+
+        }
+        
+        a:hover {
+                background: black;
+                color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- 번호없는 정렬 ul, 안에 li -->
+    <ul>
+        <li>
+            <a href="page4.html">회원가입</a>
+        </li>
+        <li>
+            <a href="page5.html">제품정보</a>
+        </li>
+        <li>    
+            <a href="page6.html">게시판</a>
+        </li>
+        <li>
+            <a href="page7.html">장바구니</a>
+        </li>
+
+
+
+    </ul>
+</body>
+</html>

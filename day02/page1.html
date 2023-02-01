@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 기본선택자(태그선택) -  태그명 */
+            /* 배경 싹다 설정 background */
+            background: yellow;
+            /* 글자설정 color */
+            color: blue;
+
+        }
+        /* h1만 이렇게 설정 */
+        h1 {
+        color: red;
+        background: black;
+        }
+        /* a태그만 이렇게 설정 */
+        a {
+            text-decoration: none;
+            color: violet;
+            background: burlywood;
+            font-size: 100px;
+            font-family: 궁서;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* 아이디는 앞에 #을 붙혀줌 */
+        #you { 
+            /* 기본선택자(id선택, 하나만 선택)-- #id명  */
+            color: lime;
+
+        }
+        /* class는 앞에 .을 붙힘 */
+        .we {
+            /* 기본선택자 (class선택, 여러개 선택할때 ) .class명  */
+            border-radius: 50px;
+        }
+        .me {
+            font-size: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+   <h1 class="me">페이지11입니다</h1>
+   <h1 class="we">페이지12입니다</h1>
+   <!-- 특정한 한 아이디에만 스타일 설정하고 싶으면 id -->
+   <h1 id="you" class="me">페이지13입니다</h1>
+
+   <a href="page2.html" class="we">2페이지로</a>
+
+    
+</body>
+</html>

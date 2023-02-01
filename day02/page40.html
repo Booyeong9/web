@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         li {
+            /* 글자에 스타일 지정 none하면 붙어있는거 사라짐 */
+            list-style: none;
+            /* 왼쪽으로 정렬 */
+            float: left;
+            /* padding - 띄우기 */
+            padding: 15;
+            /* width, height 박스 크기 */
+            width: 100px;
+            height: 50px;
+            /* border-radius: 50px; */
+            text-align: center;
+            line-height: 50px;
+
+        }
+
+        li:first-child{
+            border-radius: 50px 0 0 50px
+        }
+
+        /* linth-child 짝수번째만 선택 */
+        li:nth-child(2n) {
+            background: orange;
+        }
+
+        /* 2n+1은 홀수 */
+        li:nth-child(2n+1) {
+        background: green;
+        }
+
+        li:last-child {
+            border-radius: 0 50px 50px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+
+        }
+        
+        a:hover {
+                background: black;
+                color: white;
+        }
+
+        body {
+            background: black;
+        }
+
+        div {
+            font-size: 15px;
+            font-weight: bold;
+            color: blue;
+        }
+        
+        #top {
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px;
+
+        }
+
+        #top2{
+            background: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            /* 포지션 fixed가 되면 그 자리에서 고정됨 */
+            position: fixed;
+            background: orange;
+            padding: 2px;
+            top: 8px;
+            right: 5px;
+            box-shadow: 10px 10px black;
+        }
+
+        #total {
+
+            width: 800px;
+            height: 800px;
+            background: pink;
+            text-align: center;
+        }
+    
+        #center {
+
+            padding: 30px;
+            align-content: center;
+            vertical-align: middle;
+            width: 800px;
+            height: 500px;
+            
+        }
+        table {
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <!-- 메뉴 -->
+            <ul>
+                <ul>
+                    <li>
+                        <a href="page20.html">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="page10.html">제품정보</a>
+                    </li>
+                    <li>    
+                        <a href="page30.html">게시판</a>
+                    </li>
+                    <li>
+                        <a href="page40.html">장바구니</a>
+                    </li>
+            </ul>
+
+
+
+        </div>
+    <div id="top2">
+        고정
+
+    </div >
+    
+    <div id="center" >
+        <table >
+            <tr>
+                <td bgcolor="white">제품번호 </td>
+                <td bgcolor="purple">제품이름 </td>
+            </tr>
+            <tr>
+                <td bgcolor="white">제품이름 </td>
+                <td bgcolor="purple">shoes1 </td>
+            </tr>
+            <tr>
+                <td bgcolor="white">fun shoes1 </td>
+                <td bgcolor="purple">1000 </td>
+            </tr>
+            <tr>
+                <td bgcolor="white">제조회사</td>
+                <td bgcolor="purple">c100</td>
+            </tr>
+            <tr>
+                <td bgcolor="white" style="font-size: 20px;" >제품이미지 </td>
+                <td bgcolor="purple" ><img src="13.png" width="100" height="100" alt=""></td>
+            </tr>
+           
+
+
+
+        </table>
+    </div>
+
+    </div>
+</body>
+</html>
