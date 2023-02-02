@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hi() {
+            alert ('안녕하세요~~!')
+        }
+        function bye() {
+            alert ('잘가요~~!')
+        }
+        function check() { 
+            id = "root"
+            pw = "1234"
+            // body에 있는 값을 가져와라 document.getElementById
+            // id2, pw2 값을 가져옴
+            id2 = document.getElementById ('id2').value // root값을 가져옴
+            pw2 = document.getElementById ('pw2').value // 1234값을 가져옴
+            result = document.getElementById('result')
+            if (id == id2 && pw == pw2) {
+            //alert("로그인 성공")
+            //result안에 오른쪽에 있는 내용을 html코드로 안쪽에 집어넣어요!
+            result.innerHTML = "<font color=red>로그인 성공!!!</font> <img src='ok.jpg' width=100 height=100>"
+
+        } else{result.innerHTML = "<font color=blue>로그인 실패!!!</font> <img src='no.png' width=100 height=100>"}
+        // id pw 둘다 만족해야 함 
+        
+        }
+        function idcheck() {
+            id2 = document.getElementById("di2").value
+            alart(id2.length)
+        }
+    </script>
+</head>
+<body>
+    <!-- onclick 클릭했을때 뭐할껀지 hi()함수가 뜨게 할 건지 -->
+    <button  onclick="hi()" >인사처리</button>
+    <button  onclick="bye()" >잘가처리</button>
+    <hr color="black">
+    <!-- value는 미리 값을 넣어볼 수 있음    -->
+    아이디 : <input type="text" id = "id2" value="root"> <br>
+    <button onclick></button>
+    비밀번호 : <input type="text" id = "pw2" value="1234"> <br>
+    <button onclick="check()">로그인처리</button>
+    <div id = "result">
+        결과 들어갈 곳
+    </div>
+</body>
+</html>
